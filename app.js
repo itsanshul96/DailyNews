@@ -2,6 +2,24 @@ const express = require('express');
 
 const app = express();
 
+const dotenv = require("dotenv");
+
+dotenv.config({path: './.env'});
+
+const {
+    dirname
+} = require("path");
+
+const path = require("path");
+
+const publicDirectory = path.join(__dirname, './public');
+
+app.use(express.static(publicDirectory));
+
+app.use(express.urlencoded({
+    extended: false
+}));
+
 app.set('view engine', 'hbs');
 
 app.get("/home", (req, res) => {
