@@ -18,11 +18,11 @@
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="" class="sign-in-form">
+                <form action="" class="sign-in-form" method="GET">
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="email" name="email">
+                        <input type="text" placeholder="Email" name="email">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
@@ -45,11 +45,11 @@
                         </a>
                     </div>
                 </form>
-                <form action="" class="sign-up-form">
+                <form action="/auth/register" class="sign-up-form" method="POST">
                     <h2 class="title">Sign up</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" name="name">
+                        <input type="text" placeholder="Name" name="name">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
@@ -98,6 +98,7 @@
             </div>
 
         </div>
+        {{#if message}}<span class="alert-msg">{{message}}</span>{{/if}}
     </div>
    <script src="/regslides.js"></script>
 </body>
