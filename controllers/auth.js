@@ -41,7 +41,7 @@ exports.register = (req, res) => {
             } else {
                 console.log('I am printing results ' + results);
                 return res.render('home', {
-                    message: "You are succesfully registerd with DailyNews, Let's read something meaningful"
+                    message: "Welcome " + name + "! You are succesfully registerd with DailyNews, Let's read something meaningful"
                 });
             }
         });
