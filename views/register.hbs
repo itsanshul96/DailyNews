@@ -18,33 +18,6 @@
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="" class="sign-in-form" method="GET">
-                    <h2 class="title">Sign in</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Email" name="email">
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" name="password">
-                    </div>
-                    <input type="Submit" value="Login" class="btn solid">
-                    <p class="social-text">Follow us on</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </form>
                 <form action="/auth/register" class="sign-up-form" method="POST">
                     <h2 class="title">Sign up</h2>
                     <div class="input-field">
@@ -76,6 +49,34 @@
                         </a>
                     </div>
                 </form>
+                <form action="" class="sign-in-form" method="GET">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Email" name="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password">
+                    </div>
+                    <input type="Submit" value="Login" class="btn solid">
+                    <p class="social-text">Follow us on</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+                
             </div>
 
         </div>
@@ -98,8 +99,8 @@
             </div>
 
         </div>
-        {{#if message}}<span class="alert-msg">{{message}}</span>{{/if}}
     </div>
+    {{#if message}}<h3 class="alert-msg">{{message}}</h3>{{/if}}
    <script src="/regslides.js"></script>
 </body>
 

@@ -8,3 +8,7 @@ sign_up_btn.addEventListener('click', () => {
 sign_in_btn.addEventListener('click', () => {
     container.classList.remove("sign-up-mode");
 });
+/*if there is an error then redirect on to the sign up page*/
+if (document.getElementsByClassName('alert-msg').length){
+    document.getElementById('sign-up-btn').click();
+}
