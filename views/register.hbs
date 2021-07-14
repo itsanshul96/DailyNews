@@ -22,15 +22,15 @@
                     <h2 class="title">Sign up</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Name" name="name">
+                        <input type="text" placeholder="Name" name="name" required>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="text" placeholder="Email" name="email">
+                        <input type="text" placeholder="Email" name="email" required>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Enter Password" name="password">
+                        <input type="password" placeholder="Enter Password" name="password" required>
                     </div>
                     <input type="Submit" value="Sign up" class="btn solid">
                     <p class="social-text">Follow us on</p>
@@ -53,11 +53,11 @@
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Email" name="email">
+                        <input type="text" placeholder="Email" name="email" required>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" name="password">
+                        <input type="password" placeholder="Password" name="password" required>
                     </div>
                     <input type="Submit" value="Login" class="btn solid">
                     <p class="social-text">Follow us on</p>
@@ -102,6 +102,10 @@
     </div>
     {{#if message}}<h3 class="alert-msg">{{message}}</h3>{{/if}}
    <script src="/regslides.js"></script>
+</script>
+   
+
+
 </body>
 
 </html>

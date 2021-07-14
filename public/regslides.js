@@ -12,3 +12,4 @@ sign_in_btn.addEventListener('click', () => {
 if (document.getElementsByClassName('alert-msg').length){
     document.getElementById('sign-up-btn').click();
 }
+
